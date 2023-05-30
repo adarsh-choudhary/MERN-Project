@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0  ;
+}
+.container{
+    background-color: aqua;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.items{
+    width:200px;
+    height:200px;
+    align-items: vertia;
+}
+.item1{
+    background-color: rgb(179, 24, 24);
+}
+.item2{
+    background-color: rgb(221, 221, 22);
+}
+.item3{
+    background-color: rgb(48, 48, 238);
+}
+.item4{
+    background-color: rgb(92, 238, 92);
+}
+.item5{
+    background-color: rgb(226, 156, 25);
+}
