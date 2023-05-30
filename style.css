@@ -2,4 +2,74 @@ body{
    
     background-image: url(https://images.pexels.com/photos/1026691/pexels-photo-1026691.jpeg?cs=srgb&dl=curry-delicious-food-delicious-indian-food-indian-cuisine-1026691.jpg&fm=jpg);
     background-size: 1500px;
+    overflow: auto;
+}
+h1{
+    color:black;
+    font-size: 50px;
+    background-color:firebrick;
+    width: 350px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid firebrick;
+    padding: 05px;
+    margin-top: 0px;
+    text-align: left;
+}
+h2{
+    background-color: yellow;
+    width:350px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid yellow;
+    padding: 05px;
+}
+#animation{
+    width: 1000px;
+    height: auto;
+    background-color: cadetblue;
+   position: absolute;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+   animation-direction:initial  ;
+}
+@keyframes move{
+    from{left:5px}
+    to{left:1220px}
+
+}
+#flex_for_meal_type{
+   margin-top: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.items{
+    width:200px;
+    height:100px;
+    align-items: vertia;
+}
+.meal1{
+    background-color:tan;
+}
+.meal2{
+    background-color:steelblue;
+}
+.meal3{
+    background-color:salmon ;
+}
+.meal4{
+    background-color: rgb(92, 238, 92);
+}
+.meal5{
+    background-color:bisque;
+}
+.meal6{
+    background-color:dimgray;
+}
+.meal7{
+    background-color:honeydew;
+}
+.items:hover{
+    width: 150px;
+    height:200px;
 }
