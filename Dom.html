@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <metan charset="UTF-8">
+    <title>DOM Feratures</title>
+</head>
+<body>
+  <h1>Example for DOM </h1>
+  <div id="one" class="example">Hi</div>
+  <div id="two" class="example">Hi</div>
+  <div id="three" class="example">Hi</div>
+  <button id="button">Click Me</button>
+  <button id="this_button" onclick="reveal(this)">This Button</button>
+  <div id="four">
+    <p id="magic">I Might Appear And Disappear</p>
+    <button id="click" onclick="clic()">Click On Me</button>
+  </div>
+
+  <script>
+    document.getElementById('button').onclick=function()
+    {
+        alert('You clicked Me');
+    }
+
+    function reveal(el)
+    {
+        console.log(el); 
+    }
+    function clic()
+    {
+        let ele=document.getElementById("magic");
+       ele.style.display === "none" ? ele.style.display="block" : ele.style.display="none"; 
+        //if(ele.style.display === "none")
+        //{
+         //   ele.style.display = "block";
+        //}
+        //else{
+          //  ele.style.display= "none";
+        //}
+    }
+  </script>
+</body>
+</html>
